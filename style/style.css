@@ -1,0 +1,75 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: url('/media/mario-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#gameboard{
+    height: 600px;
+    width: 600px;
+    background-color: brown;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+/* #instructions{
+    height: 600px;
+    width: 600px;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+p{
+    color:black ;
+    font-weight: 400;
+} */
+
+#gameboard div{
+    width: 200px;
+    height: 200px;
+    background-image: url(/media/pipe.png);
+    background-size: cover;
+    z-index: 2;
+}
+
+#gameboard div img{
+    width: 110px;
+    height: 110px;
+    z-index: 1;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+
+}
+
+button{
+    color: white;
+    background-color: blue;
+    padding: 0.5rem;
+    margin-bottom: 16px;
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+.gameover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#startOver{
+    display: none;
+}
+
+.gameOverh2{
+    display: none;
+}
